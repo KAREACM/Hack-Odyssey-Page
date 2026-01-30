@@ -299,8 +299,8 @@ function App() {
                     <Users size={20} className="text-cyan-400" />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">4 to 6 Members per Team</p>
-                    <p className="text-gray-400">Each team must consist of minimum 4 and maximum 6 members</p>
+                    <p className="font-semibold text-lg">4 to 5 Members per Team</p>
+                    <p className="text-gray-400">Each team must consist of minimum 4 and maximum 5 members</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -364,7 +364,7 @@ function App() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">•</span>
-                  <span className="text-gray-300">Top performers will receive internship opportunities</span>
+                  <span className="text-gray-300">Top performers may receive internship opportunities</span>
                 </li>
               </ul>
             </div>
