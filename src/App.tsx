@@ -14,8 +14,8 @@ function App() {
   ];
 
   const facultyCoordinators = [
-    { name: "Dr. P. Chinnasamy", designation: "Professor & Head", image: "/images/usericon.png" },
-    { name: "Dr. Brintha", designation: "Associate Professor", image: "/images/usericon.png" }
+    { name: "Dr. P. Chinnasamy", designation: "Faculty Sponsor KARE ACM", image: "/images/usericon.png" },
+    { name: "Dr. Brintha", designation: "Faculty Sponsor KARE ACM W", image: "/images/usericon.png" }
   ];
 
   const studentCoordinators = [
