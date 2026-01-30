@@ -299,8 +299,8 @@ function App() {
                     <Users size={20} className="text-cyan-400" />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">4 to 6 Members per Team</p>
-                    <p className="text-gray-400">Each team must consist of minimum 4 and maximum 6 members</p>
+                    <p className="font-semibold text-lg">4 to 5 Members per Team</p>
+                    <p className="text-gray-400">Each team must consist of minimum 4 and maximum 5 members</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -364,7 +364,7 @@ function App() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">•</span>
-                  <span className="text-gray-300">Top performers will receive internship opportunities</span>
+                  <span className="text-gray-300">Top performers may receive internship opportunities</span>
                 </li>
               </ul>
             </div>
@@ -477,6 +477,47 @@ function App() {
           </div>
         </div>
       </section>
+
+              {/* Location */}
+<section id="location" className="py-20 bg-gray-900/50">
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+      Event Location
+    </h2>
+
+    <div className="max-w-4xl mx-auto bg-gray-800/50 border border-cyan-500/20 rounded-xl p-6">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+        <div className="flex items-center gap-3 text-cyan-400">
+          <MapPin size={24} />
+          <span className="text-lg font-semibold">
+            Central Library, Kalasalingam Academy of Research and Education
+          </span>
+        </div>
+
+        <a
+          href="https://www.google.com/maps/place/Kalasalingam+University+Library/@9.5745085,77.6786681,18.47z/data=!4m6!3m5!1s0x3b06dbc1884caacd:0xf92359a4abd80c7e!8m2!3d9.574492!4d77.6788524!16s%2Fg%2F11fxx4jryd"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/40 transition-all"
+        >
+          <MapPin size={18} />
+          Get Directions
+        </a>
+      </div>
+
+      <div className="w-full h-[400px] rounded-lg overflow-hidden border border-cyan-500/20">
+        <iframe
+          title="University Library Location"
+          src="https://www.google.com/maps?q=9.574492,77.6788524&output=embed"
+          className="w-full h-full"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="bg-gray-900 border-t border-cyan-500/20 py-8">
