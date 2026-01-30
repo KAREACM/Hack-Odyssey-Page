@@ -123,19 +123,19 @@ function App() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="#register"
+                href="https://euphoria.kalasalingam.ac.in/pages/form/registerform.php"
                 className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all transform hover:scale-105"
               >
                 Register Now
               </a>
               <a
-                href="https://wa.me/917893340788"
+                href="https://chat.whatsapp.com/GrEVgDJYESG3xaAzlMwMzC"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-green-600 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-green-500/50 transition-all transform hover:scale-105 flex items-center gap-2"
               >
                 <ExternalLink size={20} />
-                WhatsApp Us
+                Join the group
               </a>
             </div>
             <p className="mt-6 text-2xl font-bold text-cyan-400">Registration Fee: ₹300 per member</p>
