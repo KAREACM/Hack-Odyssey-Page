@@ -14,8 +14,8 @@ function App() {
   ];
 
   const facultyCoordinators = [
-    { name: "Dr. P. Chinnasamy", designation: "Faculty Sponsor KARE ACM", image: "/images/usericon.png" },
-    { name: "Dr. Brintha", designation: "Faculty Sponsor KARE ACM W", image: "/images/usericon.png" }
+    { name: "Dr. P. Chinnasamy", designation: "Faculty Sponsor KARE ACM", image: "/images/chinnasir.png" },
+    { name: "Dr. N C Brintha", designation: "Faculty Sponsor KARE ACM W", image: "/images/brinthamam.png" }
   ];
 
   const studentCoordinators = [
@@ -122,6 +122,15 @@ function App() {
               Register now and be part of an exciting 24-hour hackathon with amazing prizes and internship opportunities!
             </p>
             <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://www.google.com/maps/place/Kalasalingam+University+Library/@9.5745085,77.6786681,18.47z/data=!4m6!3m5!1s0x3b06dbc1884caacd:0xf92359a4abd80c7e!8m2!3d9.574492!4d77.6788524!16s%2Fg%2F11fxx4jryd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-green-600 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-green-500/50 transition-all transform hover:scale-105 flex items-center gap-2"
+              >
+                <ExternalLink size={20} />
+                Get Directions
+              </a>
               <a
                 href="https://euphoria.kalasalingam.ac.in/pages/form/registerform.php"
                 className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all transform hover:scale-105"
@@ -441,13 +450,29 @@ function App() {
           <div className="max-w-3xl mx-auto">
             <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-6 text-center">Contact Information</h3>
-
               <div className="grid md:grid-cols-3 gap-6">
+
                 <div className="text-center">
                   <div className="bg-cyan-500/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Phone className="text-cyan-400" size={24} />
                   </div>
-                  <p className="font-semibold mb-1">Thaha (CSE)</p>
+                  <p className="font-semibold mb-1">Joshua (Tamil & Telugu)</p>
+                  <a href="tel:7893340788" className="text-cyan-400 hover:text-cyan-300">8870740110</a>
+                </div>
+
+                <div className="text-center">
+                  <div className="bg-cyan-500/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Phone className="text-cyan-400" size={24} />
+                  </div>
+                  <p className="font-semibold mb-1">Setu (Hindi & Telugu)</p>
+                  <a href="tel:7893340788" className="text-cyan-400 hover:text-cyan-300">7674043125</a>
+                </div>
+
+                <div className="text-center">
+                  <div className="bg-cyan-500/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Phone className="text-cyan-400" size={24} />
+                  </div>
+                  <p className="font-semibold mb-1">Thaha (Hindi & Telugu)</p>
                   <a href="tel:7893340788" className="text-cyan-400 hover:text-cyan-300">7893340788</a>
                 </div>
 
@@ -455,7 +480,7 @@ function App() {
                   <div className="bg-cyan-500/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Phone className="text-cyan-400" size={24} />
                   </div>
-                  <p className="font-semibold mb-1">Umesh (CSE)</p>
+                  <p className="font-semibold mb-1">Umesh (Telugu & English)</p>
                   <a href="tel:9573861418" className="text-cyan-400 hover:text-cyan-300">9573861418</a>
                 </div>
 
@@ -463,7 +488,7 @@ function App() {
                   <div className="bg-cyan-500/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Phone className="text-cyan-400" size={24} />
                   </div>
-                  <p className="font-semibold mb-1">Prem (CSE)</p>
+                  <p className="font-semibold mb-1">Prem (Telugu & English)</p>
                   <a href="tel:8885462451" className="text-cyan-400 hover:text-cyan-300">8885462451</a>
                 </div>
               </div>
