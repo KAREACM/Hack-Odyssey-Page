@@ -19,9 +19,12 @@ function App() {
   ];
 
   const studentCoordinators = [
-    { name: "Thaha", role: "Student Coordinator", image: "/images/usericon.png" },
-    { name: "Umesh", role: "Student Coordinator", image: "/images/usericon.png" },
-    { name: "Prem", role: "Student Coordinator", image: "/images/usericon.png" }
+    { name: "Prasanna Venkatesh", role: "Student Coordinator (Tamil)", phone: "9600945451", image: "/images/usericon.png" },
+    { name: "Niranjan", role: "Student Coordinator (Tamil)", phone: "9942324858", image: "/images/usericon.png" },
+    { name: "Sahana", role: "Student Coordinator (Tamil)", phone: "9626331196", image: "/images/usericon.png" },
+    { name: "Umesh", role: "Student Coordinator (Telugu)", phone: "9573861418", image: "/images/usericon.png" },
+    { name: "Rajitha", role: "Student Coordinator (Telugu)", phone: "9347542139", image: "/images/usericon.png" },
+    { name: "Jahnavi", role: "Student Coordinator (Telugu)", phone: "8074643008", image: "/images/usericon.png" }
   ];
 
   return (
@@ -440,7 +443,7 @@ function App() {
         </div>
       </section>
 
-      {/* Contact */}
+      {/* Contact
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -501,7 +504,7 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
               {/* Location */}
 <section id="location" className="py-20 bg-gray-900/50">
