@@ -19,6 +19,7 @@ function App() {
   ];
 
   const studentCoordinators = [
+    { name: "Shaik Thaha", role: "Student Coordinator (Hindi)", phone: "7893340788", image: "/images/usericon.png" },
     { name: "Prasanna Venkatesh", role: "Student Coordinator (Tamil)", phone: "9600945451", image: "/images/usericon.png" },
     { name: "Niranjan", role: "Student Coordinator (Tamil)", phone: "9942324858", image: "/images/usericon.png" },
     { name: "Sahana", role: "Student Coordinator (Tamil)", phone: "9626331196", image: "/images/usericon.png" },
