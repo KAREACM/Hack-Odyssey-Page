@@ -15,8 +15,19 @@ function App() {
 
   const facultyCoordinators = [
     { name: "Dr. P. Chinnasamy", designation: "Faculty Sponsor KARE ACM", image: "/images/chinnasir.png" },
-    { name: "Dr. N C Brintha", designation: "Faculty Sponsor KARE ACM W", image: "/images/brinthamam.png" }
+    { name: "Dr. N C Brintha", designation: "Faculty Sponsor KARE ACM W", image: "/images/brinthamam.png" },
+    { name: "Dr. MK Nagarajan", designation: "Faculty Co-ordinator", image: "/images/usericon.png" },
+    { name: "Dr. Parivalzhan", designation: "Faculty Co-ordinator", image: "/images/usericon.png" },
+    { name: "Mrs. S. Reshni", designation: "Faculty Co-ordinator", image: "/images/usericon.png" },
+    { name: "Mrs. Kardeepa", designation: "Faculty Co-ordinator", image: "/images/usericon.png" },
+    { name: "Mr. Surendiran Muthukumar", designation: "Faculty Co-ordinator", image: "/images/usericon.png" },
+    { name: "Mr. Siva Murugan", designation: "Faculty Co-ordinator", image: "/images/usericon.png" },
+    { name: "Mrs. S. Amutha", designation: "Faculty Co-ordinator", image: "/images/usericon.png" },
+    { name: "Mrs. N Kirthiga", designation: "Faculty Co-ordinator", image: "/images/usericon.png" }
   ];
+
+  const firstTwoFaculty = facultyCoordinators.slice(0, 2);
+  const remainingFaculty = facultyCoordinators.slice(2);
 
   const studentCoordinators = [
     { name: "Shaik Thaha", role: "Student Coordinator (Hindi)", phone: "7893340788", image: "/images/usericon.png" },
@@ -394,20 +405,42 @@ function App() {
           <p className="text-center text-gray-400 mb-16">Meet the people behind Hack Odyssey 3.0</p>
 
           {/* Faculty Coordinators */}
-          <div className="max-w-5xl mx-auto mb-16">
-            <h3 className="text-3xl font-bold text-center mb-8 text-cyan-400">Faculty Coordinators</h3>
-            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-              {facultyCoordinators.map((faculty, index) => (
+          <div className="max-w-6xl mx-auto mb-20">
+            <h3 className="text-3xl font-bold text-center mb-10 text-cyan-400">
+              Faculty Coordinators
+            </h3>
+
+            {/* First Row – 2 Members */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+              {firstTwoFaculty.map((faculty, index) => (
                 <div
                   key={index}
-                  className="bg-gray-800/50 border border-cyan-500/20 rounded-xl p-6 text-center hover:border-cyan-500/50 transition-all hover:transform hover:scale-105"
+                  className="bg-gray-800/50 border border-cyan-500/20 rounded-xl p-6 text-center hover:border-cyan-500/50 transition-all hover:scale-105"
                 >
                   <img
                     src={faculty.image}
                     alt={faculty.name}
                     className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-cyan-500/30"
                   />
-                  <h4 className="text-xl font-bold text-gray-100 mb-1">{faculty.name}</h4>
+                  <h4 className="text-xl font-bold">{faculty.name}</h4>
+                  <p className="text-cyan-400 text-sm">{faculty.designation}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Remaining Rows – 3 per Row */}
+            <div className="grid md:grid-cols-3 gap-8">
+              {remainingFaculty.map((faculty, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-800/50 border border-cyan-500/20 rounded-xl p-6 text-center hover:border-cyan-500/50 transition-all hover:scale-105"
+                >
+                  <img
+                    src={faculty.image}
+                    alt={faculty.name}
+                    className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-4 border-cyan-500/30"
+                  />
+                  <h4 className="text-lg font-bold">{faculty.name}</h4>
                   <p className="text-cyan-400 text-sm">{faculty.designation}</p>
                 </div>
               ))}
